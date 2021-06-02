@@ -62,9 +62,10 @@ A list of commonly used resources that I find helpful are listed in the acknowle
 
 ### Folders
 
-* [build/](build/): Running `cmake` and `make`.
+* [build/](build/): Running `cmake ..` and `make`.
 * [include/](include/): c++ header files.
-* [resource/](resource/): xml and input images.
+* [lib/](lib/): c++ custom libraries.
+* [resource/](resource/): input videos.
 * [src/](src/): c++ definitions.
 
 
@@ -90,7 +91,6 @@ A list of commonly used resources that I find helpful are listed in the acknowle
     └── ShowRoadLane.cpp
 
 6 directories, 9 files
-
 
 ```
 
@@ -154,7 +154,6 @@ Usage: lane [params]
 		delay between two frames
 	-v, --video (value:<none>)
 		input video path
-
 ```
 
 <br>
