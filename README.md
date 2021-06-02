@@ -65,7 +65,6 @@ A list of commonly used resources that I find helpful are listed in the acknowle
 * [build/](build/): Running `cmake` and `make`.
 * [include/](include/): c++ header files.
 * [resource/](resource/): xml and input images.
-* [result/](result/): Storing image with detected plate.
 * [src/](src/): c++ definitions.
 
 
@@ -73,6 +72,24 @@ A list of commonly used resources that I find helpful are listed in the acknowle
 
 
 ```
+.
+├── build
+├── CMakeLists.txt
+├── include
+│   ├── LaneDetector.hpp
+│   └── ShowRoadLane.hpp
+├── lib
+├── README.md
+├── ressource
+│   └── video
+│       ├── project_video.mp4
+│       └── solidWhiteRight.mp4
+└── src
+    ├── LaneDetector.cpp
+    ├── Main.cpp
+    └── ShowRoadLane.cpp
+
+6 directories, 9 files
 
 
 ```
@@ -128,6 +145,15 @@ This is an example of how to list things you need to use the software and how to
 <br>
 
 ```
+Road lane detection
+Usage: lane [params] 
+
+	-?, -h, --help, --usage (value:true)
+		show help message
+	-d, --delay (value:30)
+		delay between two frames
+	-v, --video (value:<none>)
+		input video path
 
 ```
 
@@ -135,6 +161,7 @@ This is an example of how to list things you need to use the software and how to
 
 2. Run with a video in `ressource/video`
 ```
+../ressource/video/solidWhiteRight.mp4
 ```
 
 <br>
